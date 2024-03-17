@@ -1,8 +1,8 @@
 ﻿
 using Class.Models;
 
-// TASK-1
-//#region
+
+#region TASK-1
 //Book[] books = new Book[10];
 
 //string name;
@@ -33,11 +33,10 @@ using Class.Models;
 //{
 //    Console.WriteLine($"{i+1}.Book Name : {books[i].Name} \n  Page Count : {books[i].PageCount}\n");
 //}
-//#endregion
+#endregion
 
 
-#region
-// TASK-2
+#region TASK-2
 Console.WriteLine("Enter Group Number : ");
 int GroupNo = int.Parse(Console.ReadLine());
 
@@ -60,7 +59,6 @@ while (true)
 
     if (group.GetStudents().Length == GroupLimit)
     {
-        Console.WriteLine($"Group {GroupNo} is full");
         break;
     }
 }
@@ -69,7 +67,4 @@ foreach (Student student in students)
 {
     Console.WriteLine($"Name: {student.Name}, Surname: {student.Surname}");
 }
-
-
-
 #endregion
